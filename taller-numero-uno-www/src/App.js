@@ -1,4 +1,3 @@
-// ? importamos el hook usestate para poder hacer uso de el
 import { React, useState } from 'react';
 
 // ? por ser un ejercisio censillo haremos todo en el mismo componente app
