@@ -1,13 +1,17 @@
+// ? importamos el hook usestate para poder hacer uso de el
 import { React, useState } from 'react';
 
+// ? por ser un ejercisio censillo haremos todo en el mismo componente app
 function App() {
 
   const [display, setDisplay] = useState('');
 
+  // ? creamos la funcion que va a hacer que nuestros clicks cumplan su funcion
   const handleClick = (value) => {
     setDisplay(display + value);
   };
 
+  // ? creamos la funcion que va a realizar nuestros calculos o arrojar "ERROR" al realizar un calculo incorrecto
   const calculate = () => {
     try {
       setDisplay(eval(display).toString());
@@ -16,6 +20,7 @@ function App() {
     }
   };
 
+  // ? esta funcion simplemente limpiara la pantalla de la calculadora
   const clearDisplay = () => {
     setDisplay('');
   };
