@@ -1,0 +1,11 @@
+#ignora la carpeta node_modules
+node_modules
+
+#ignora los archivos de texto
+.txt
+
+#ignora los archivos relacionado a API keys
+.env
+
+#ignora archivos de configuracion SASS
+.sass-cache
